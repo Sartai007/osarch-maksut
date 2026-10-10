@@ -1,0 +1,7 @@
+
+FriendlyName                   MediaType BusType SizeGB
+------------                   --------- ------- ------
+Micron MTFDKCD1T0QGN-1BN1AABLA SSD       NVMe    953,87
+
+
+

@@ -1,0 +1,10 @@
+=== RAM MODULES ===
+
+DeviceLocator              CapacityGB Speed Manufacturer PartNumber          
+-------------              ---------- ----- ------------ ----------          
+Controller0-ChannelA                8  5600 Samsung      M425R1GB4PB0-CWMT3  
+Controller1-ChannelA-DIMM0          8  5600 Samsung      M425R1GB4PB0-CWMOL
+
+=== SUMMARY ===
+Total installed RAM: 16 GB
+Installed module count: 2

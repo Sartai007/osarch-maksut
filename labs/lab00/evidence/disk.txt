@@ -1,0 +1,11 @@
+=== PHYSICAL DISKS ===
+
+FriendlyName                   MediaType BusType SizeGB
+------------                   --------- ------- ------
+Micron MTFDKCD1T0QGN-1BN1AABLA SSD       NVMe    953,87
+
+=== VOLUME SPACE ===
+
+DriveLetter FileSystemLabel SizeGB FreeSpaceGB
+----------- --------------- ------ -----------
+          C Windows 11      953,75      797,33

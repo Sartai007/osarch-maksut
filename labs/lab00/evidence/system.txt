@@ -1,0 +1,17 @@
+=== FIRMWARE TYPE ===
+Firmware type: Unknown or unavailable (value: )
+
+=== BIOS INFORMATION ===
+
+
+Manufacturer      : LENOVO
+SMBIOSBIOSVersion : QDCN24WW
+ReleaseDate       : 05.03.2025 5:00:00
+
+=== VIRTUALIZATION ===
+
+
+Name                                    : Intel(R) Core(TM) 5 210H
+VMMonitorModeExtensions                 : False
+VirtualizationFirmwareEnabled           : False
+SecondLevelAddressTranslationExtensions : False

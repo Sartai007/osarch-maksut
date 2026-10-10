@@ -1,0 +1,16 @@
+
+# Temporary files
+*.tmp
+*.bak
+*.log
+
+# Virtual machine disks and exports
+*.vdi
+*.vmdk
+*.vhd
+*.vhdx
+*.ova
+*.ovf
+
+# Python cache
+__pycache__/

@@ -1,0 +1,26 @@
+Lab 2 - Connectivity test results
+
+1. Windows -> Ubuntu
+Command: ping -n 4 192.168.208.129
+Result: Passed, 0% packet loss.
+
+2. Ubuntu -> Windows (before firewall rule)
+Command: ping -c 4 192.168.208.130
+Result: Failed, 100% packet loss.
+
+3. Windows firewall rule added in elevated PowerShell:
+New-NetFirewallRule -DisplayName "Lab02 - allow ping (ICMPv4 echo)" -Direction Inbound -Protocol ICMPv4 -IcmpType 8 -RemoteAddress LocalSubnet -Action Allow
+
+4. Ubuntu -> Windows (after firewall rule)
+Command: ping -c 4 192.168.208.130
+Result: Passed, 0% packet loss.
+
+5. Windows -> Internet
+Command: ping -n 4 8.8.8.8
+Result: Passed, 0% packet loss.
+
+6. Ubuntu -> Internet
+Command: ping -c 4 8.8.8.8
+Result: Passed, 0% packet loss.
+
+Network mode: NAT on both VMs.

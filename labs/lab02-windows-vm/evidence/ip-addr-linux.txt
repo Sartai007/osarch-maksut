@@ -1,0 +1,4 @@
+Lab 2 - Ubuntu guest network information
+Ubuntu IPv4 address: 192.168.208.129
+Network mode: NAT
+Command used: ip addr

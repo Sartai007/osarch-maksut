@@ -1,0 +1,308 @@
+﻿**********************
+Начало записи сценария Windows PowerShell
+Время начала: 20261029114025
+Имя пользователя: user
+Запуск от имени пользователя: user
+Имя конфигурации: 
+Компьютер: Hidden (Microsoft Windows NT 10.0.26200.0)
+Ведущее приложение: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+PSVersion: 5.1.26100.9444
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9444
+BuildVersion: 10.0.26100.9444
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Транскрибирование запущено, выходной файл windows-specs.txt
+PS C:\Users\user\Documents\GitHub\osarch-maksut\labs\lab03-teardown\evidence> Get-CimInstance Win32_ComputerSystem | Format-List Manufacturer, Model, SystemFamily, TotalPhysicalMemory
+
+
+Manufacturer        : LENOVO
+Model               : 83K4
+SystemFamily        : IdeaPad Slim 3 15IRH10R
+TotalPhysicalMemory : 16824262656
+
+
+
+PS C:\Users\user\Documents\GitHub\osarch-maksut\labs\lab03-teardown\evidence> Get-CimInstance Win32_ComputerSystemProduct | Format-List Vendor, Version, Name
+
+
+Vendor  : LENOVO
+Version : IdeaPad Slim 3 15IRH10R
+Name    : 83K4
+
+
+
+PS C:\Users\user\Documents\GitHub\osarch-maksut\labs\lab03-teardown\evidence> Get-CimInstance Win32_Processor | Format-List *
+
+
+Availability                            : 3
+CpuStatus                               : 1
+CurrentVoltage                          : 11
+DeviceID                                : CPU0
+ErrorCleared                            :
+ErrorDescription                        :
+LastErrorCode                           :
+LoadPercentage                          : 3
+Status                                  : OK
+StatusInfo                              : 3
+AddressWidth                            : 64
+DataWidth                               : 64
+ExtClock                                : 100
+L2CacheSize                             : 7168
+L2CacheSpeed                            :
+MaxClockSpeed                           : 2200
+PowerManagementSupported                : False
+ProcessorType                           : 3
+Revision                                :
+SocketDesignation                       : U3E1
+Version                                 :
+VoltageCaps                             :
+Caption                                 : Intel64 Family 6 Model 186 Stepping 2
+Description                             : Intel64 Family 6 Model 186 Stepping 2
+InstallDate                             :
+Name                                    : Intel(R) Core(TM) 5 210H
+ConfigManagerErrorCode                  :
+ConfigManagerUserConfig                 :
+CreationClassName                       : Win32_Processor
+PNPDeviceID                             :
+PowerManagementCapabilities             :
+SystemCreationClassName                 : Win32_ComputerSystem
+SystemName                              : secret)
+CurrentClockSpeed                       : 2200
+Family                                  : 1
+OtherFamilyDescription                  :
+Role                                    : CPU
+Stepping                                :
+UniqueId                                :
+UpgradeMethod                           : 65
+Architecture                            : 9
+AssetTag                                : To Be Filled By O.E.M.
+Characteristics                         : 252
+L3CacheSize                             : 12288
+L3CacheSpeed                            : 0
+Level                                   : 6
+Manufacturer                            : GenuineIntel
+NumberOfCores                           : 8
+NumberOfEnabledCore                     : 8
+NumberOfLogicalProcessors               : 12
+SecondLevelAddressTranslationExtensions : False
+ThreadCount                             : 12
+VirtualizationFirmwareEnabled           : False
+VMMonitorModeExtensions                 : False
+PSComputerName                          :
+CimClass                                : root/cimv2:Win32_Processor
+CimInstanceProperties                   : {Caption, Description, InstallDate, Name...}
+CimSystemProperties                     : Microsoft.Management.Infrastructure.CimSystemProperties
+
+
+
+PS C:\Users\user\Documents\GitHub\osarch-maksut\labs\lab03-teardown\evidence> Get-CimInstance Win32_PhysicalMemory | Format-List *
+
+
+Caption               : Физическая память
+Description           : Физическая память
+InstallDate           :
+Name                  : Физическая память
+Status                :
+CreationClassName     : Win32_PhysicalMemory
+Manufacturer          : Samsung
+Model                 :
+OtherIdentifyingInfo  :
+PoweredOn             :
+SKU                   :
+Tag                   : Physical Memory 0
+Version               :
+HotSwappable          :
+Removable             :
+Replaceable           :
+FormFactor            : 0
+BankLabel             : BANK 0
+Capacity              : 8589934592
+DataWidth             : 64
+InterleavePosition    : 1
+MemoryType            : 0
+PositionInRow         :
+Speed                 : 5600
+TotalWidth            : 64
+Attributes            : 1
+ConfiguredClockSpeed  : 4800
+ConfiguredVoltage     : 1100
+DeviceLocator         : Controller0-ChannelA
+InterleaveDataDepth   : 1
+MaxVoltage            : 0
+MinVoltage            : 0
+SMBIOSMemoryType      : 34
+TypeDetail            : 128
+PSComputerName        :
+CimClass              : root/cimv2:Win32_PhysicalMemory
+CimInstanceProperties : {Caption, Description, InstallDate, Name...}
+CimSystemProperties   : Microsoft.Management.Infrastructure.CimSystemProperties
+
+Caption               : Физическая память
+Description           : Физическая память
+InstallDate           :
+Name                  : Физическая память
+Status                :
+CreationClassName     : Win32_PhysicalMemory
+Manufacturer          : Samsung
+Model                 :
+OtherIdentifyingInfo  :
+PoweredOn             :
+SKU                   :
+Tag                   : Physical Memory 1
+Version               :
+HotSwappable          :
+Removable             :
+Replaceable           :
+FormFactor            : 12
+BankLabel             : BANK 0
+Capacity              : 8589934592
+DataWidth             : 64
+InterleavePosition    : 1
+MemoryType            : 0
+PositionInRow         :
+Speed                 : 5600
+TotalWidth            : 64
+Attributes            : 1
+ConfiguredClockSpeed  : 4800
+ConfiguredVoltage     : 1100
+DeviceLocator         : Controller1-ChannelA-DIMM0
+InterleaveDataDepth   : 1
+MaxVoltage            : 0
+MinVoltage            : 0
+SMBIOSMemoryType      : 34
+TypeDetail            : 128
+PSComputerName        :
+CimClass              : root/cimv2:Win32_PhysicalMemory
+CimInstanceProperties : {Caption, Description, InstallDate, Name...}
+CimSystemProperties   : Microsoft.Management.Infrastructure.CimSystemProperties
+
+
+
+PS C:\Users\user\Documents\GitHub\osarch-maksut\labs\lab03-teardown\evidence> Get-CimInstance Win32_PhysicalMemoryArray | Format-List *
+
+
+Status                :
+Name                  : Массив физической памяти
+Replaceable           :
+Location              : 3
+Caption               : Массив физической памяти
+Description           : Массив физической памяти
+InstallDate           :
+CreationClassName     : Win32_PhysicalMemoryArray
+Manufacturer          :
+Model                 :
+OtherIdentifyingInfo  :
+PartNumber            :
+PoweredOn             :
+SKU                   :
+Tag                   : Physical Memory Array 0
+Version               :
+Depth                 :
+Height                :
+HotSwappable          :
+Removable             :
+Weight                :
+Width                 :
+MaxCapacity           : 25165824
+MaxCapacityEx         : 25165824
+MemoryDevices         : 2
+MemoryErrorCorrection : 3
+Use                   : 3
+PSComputerName        :
+CimClass              : root/cimv2:Win32_PhysicalMemoryArray
+CimInstanceProperties : {Caption, Description, InstallDate, Name...}
+CimSystemProperties   : Microsoft.Management.Infrastructure.CimSystemProperties
+
+
+
+PS C:\Users\user\Documents\GitHub\osarch-maksut\labs\lab03-teardown\evidence> Get-PhysicalDisk | Format-List *
+
+
+ClassName                        : MSFT_PhysicalDisk
+Usage                            : Auto-Select
+OperationalStatus                : OK
+UniqueIdFormat                   : SCSI Name String
+HealthStatus                     : Healthy
+BusType                          : NVMe
+CannotPoolReason                 : Insufficient Capacity
+SupportedUsages                  : {Auto-Select, Manual-Select, Hot Spare, Retired...}
+MediaType                        : SSD
+SpindleSpeed                     : 0
+PassThroughClass                 :
+PassThroughIds                   :
+PassThroughNamespace             :
+PassThroughServer                :
+Description                      :
+FriendlyName                     : Micron MTFDKCD1T0QGN-1BN1AABLA
+Manufacturer                     :
+Model                            : Micron MTFDKCD1T0QGN-1BN1AABLA
+OperationalDetails               :
+PhysicalLocation                 : PCI Slot 2 : Bus 2 : Device 0 : Function 0 : Adapter 0
+AllocatedSize                    : 1024209543168
+CanPool                          : False
+DeviceId                         : 
+FirmwareVersion                  : 1002V8LN
+IsIndicationEnabled              : False
+IsPartial                        : True
+LogicalSectorSize                : 512
+OtherCannotPoolReasonDescription :
+PhysicalSectorSize               : 4096
+Size                             : 1024209543168
+SlotNumber                       :
+SoftwareVersion                  :
+StoragePoolUniqueId              :
+VirtualDiskFootprint             : 0
+PSComputerName                   :
+CimClass                         : root/microsoft/windows/storage:MSFT_PhysicalDisk
+CimInstanceProperties            : {ObjectId, PassThroughClass, PassThroughIds, PassThroughNamespace...}
+CimSystemProperties              : Microsoft.Management.Infrastructure.CimSystemProperties
+
+
+
+PS C:\Users\user\Documents\GitHub\osarch-maksut\labs\lab03-teardown\evidence> Get-CimInstance Win32_BaseBoard | Format-List *
+
+
+Status                  : OK
+Name                    : Основная плата
+PoweredOn               : True
+Caption                 : Основная плата
+Description             : Основная плата
+InstallDate             :
+CreationClassName       : Win32_BaseBoard
+Manufacturer            : LENOVO
+Model                   :
+OtherIdentifyingInfo    :
+PartNumber              :
+SKU                     :
+Tag                     : Base Board
+Version                 :  NO DPK
+Depth                   :
+Height                  :
+HotSwappable            : False
+Removable               : False
+Replaceable             : True
+Weight                  :
+Width                   :
+HostingBoard            : True
+RequirementsDescription :
+RequiresDaughterBoard   : False
+SlotLayout              :
+SpecialRequirements     :
+ConfigOptions           : {ConfigOptions1, ConfigOptions2, ConfigOptions3}
+Product                 : LNVNB161216
+PSComputerName          :
+CimClass                : root/cimv2:Win32_BaseBoard
+CimInstanceProperties   : {Caption, Description, InstallDate, Name...}
+CimSystemProperties     : Microsoft.Management.Infrastructure.CimSystemProperties
+
+
+
+PS C:\Users\user\Documents\GitHub\osarch-maksut\labs\lab03-teardown\evidence> Stop-Transcript
+**********************
+Конец записи протокола Windows PowerShell
+Время окончания: 20261029114200
+**********************

@@ -1,4 +1,4 @@
-﻿# Operating System Architecture
+# Operating System Architecture
 
 **Student:** Nurmukhammad Maksut  
 **Course:** Operating System Architecture
@@ -12,6 +12,13 @@
 | [Lab 02 — Windows VM](https://github.com/Sartai007/osarch-maksut/blob/main/labs/lab02-windows-vm) | Windows VM, networking, and memory overcommit | Done |
 | [Lab 03 — Teardown without a screwdriver](https://github.com/Sartai007/osarch-maksut/blob/main/labs/lab03-teardown) | Laptop hardware teardown and upgrade analysis | Done |
 | Lab 04–12 | To be updated | Not started |
+
+## Ticket Exercises
+
+| **Ticket** | **Topic** | **Status** |
+|---|---|---|
+| [Ticket 1 — New Developer Test Machine](tickets/ticket1-vm-build-doc/) | Linux and Windows virtual machine build documentation | Done |
+
 ## Tool of the Week
 
 - [Robocopy](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy)
@@ -23,3 +30,9 @@
 - `runbooks/` — operational procedures
 - `tools/` — Tool of the Week write-ups
 - `errors/` — error records
+
+## AI Use Declaration
+
+| **Tool** | **Purpose** |
+|---|---|
+| ChatGPT | Assistance with interpreting Ticket 1 requirements, drafting and revising documentation, and organizing evidence. All VM configurations, commands, and test results were based on my own work and observations. |

@@ -8,39 +8,58 @@
 
 ## 2. What Was Actually Needed
 
-The request did not specify the operating system, hardware resources, virtualization software, networking requirements, or how the test environment should be protected.
+The request describes a need for a safe testing environment but does not specify the operating system, hardware resources, virtualization software, networking requirements, or recovery method.
 
 I interpreted the request as requiring two virtual machines:
 
 - Ubuntu Server Linux
 - Windows 11
 
-Virtual machines provide isolated environments in which a developer can experiment without directly changing the host operating system.
+I chose two operating systems to provide separate Linux and Windows testing environments. Virtual machines allow a developer to experiment without directly modifying the host operating system.
 
-I made the following assumptions:
+The following assumptions were made:
 
 - VMware Workstation Pro would be used as the hypervisor.
+- Both operating systems would be useful to the developer.
 - Both guests should have internet access.
 - Both guests should be able to communicate with each other.
-- NAT networking would be used.
+- NAT networking would be sufficient.
 - Snapshots would provide recovery points if an experiment damaged a guest.
 
-The requester should ideally clarify what development tools the new employee will use, whether administrator access is required, and whether the machines need to connect to internal company resources.
+The requester should ideally clarify:
+
+- Does the developer need Linux, Windows, or both?
+- Which development tools and applications will be used?
+- Is administrator access required?
+- Do the virtual machines need access to internal company resources?
+- Is there a specific storage or performance requirement?
 
 I reused two existing virtual machines instead of installing new operating systems. This allowed me to verify the working environment, but it meant I could not capture screenshots of the original creation wizard.
 
 ## 3. What I Did
 
-### Host computer
+### Step 1 — Inspected the host computer
 
-- CPU: Intel Core 5 210H
-- Physical cores: 8
-- Logical processors: 12
-- Installed RAM: 16 GB
-- C: drive capacity: approximately 953.75 GiB
-- C: drive free space: approximately 725.25 GiB
+I recorded the host's hardware specifications and available storage before evaluating the virtual machine allocations.
 
-### Virtual machine allocation
+| Component | Specification |
+|---|---|
+| CPU | Intel Core 5 210H |
+| Physical cores | 8 |
+| Logical processors | 12 |
+| Installed RAM | 16 GB |
+| C: drive capacity | Approximately 953.75 GiB |
+| C: drive free space | Approximately 725.25 GiB |
+
+The available storage was checked using PowerShell:
+
+```powershell
+Get-PSDrive C
+```
+
+### Step 2 — Reviewed the virtual machine configurations
+
+I reused the existing Ubuntu and Windows virtual machines and recorded their resource allocations.
 
 | Resource | Ubuntu Server | Windows 11 |
 |---|---:|---:|
@@ -55,40 +74,92 @@ I allocated two CPU cores to each guest to provide processing capacity while ret
 
 The combined virtual disk capacity is 104 GB. This is the maximum capacity assigned to the virtual disks, not necessarily the amount of physical storage currently occupied. The host had approximately 725.25 GiB of free space, which is sufficient for the assigned virtual disk capacities.
 
-### Networking
+### Step 3 — Verified the Ubuntu guest
+
+I accessed the Ubuntu Server virtual machine and ran:
+
+```bash
+uname -a
+ip -br addr
+```
+
+The first command displayed the Linux kernel and system architecture. The second displayed the network interfaces and their IP addresses.
+
+The Ubuntu IP address was:
+
+`192.168.208.129`
+
+The system information was saved in `evidence/04-guest-uname.txt`.
+
+### Step 4 — Verified the Windows guest
+
+I accessed the Windows 11 virtual machine and used Command Prompt:
+
+```cmd
+systeminfo
+ipconfig
+```
+
+These commands displayed the operating system information and network configuration.
+
+The Windows IP address was:
+
+`192.168.208.130`
+
+### Step 5 — Tested network connectivity
 
 Both virtual machines use NAT networking. NAT allows guests to access the internet through the host's network connection without requiring them to appear as separate devices on the physical network.
 
-The configured IP addresses were:
-
-- Ubuntu: `192.168.208.129`
-- Windows: `192.168.208.130`
-
 Both guests were on the `192.168.208.0/24` subnet.
 
-The following connectivity tests were performed:
+I tested communication between the guests:
 
-| Test | Result |
-|---|---|
-| Ubuntu to Windows | 4 received, 0% loss |
-| Windows to Ubuntu | 4 received, 0% loss |
-| Ubuntu to internet | 4 received, 0% loss |
-| Windows to internet (retest) | 4 received, 0% loss |
-| Windows to google.com | 4 received, 0% loss |
+From Ubuntu:
 
-### Snapshots
+```bash
+ping -c 4 192.168.208.130
+```
+
+From Windows:
+
+```cmd
+ping 192.168.208.129
+```
+
+Both tests returned four successful replies with no packet loss.
+
+I then tested internet connectivity.
+
+From Ubuntu:
+
+```bash
+ping -c 4 8.8.8.8
+```
+
+From Windows:
+
+```cmd
+ping 8.8.8.8
+ping google.com
+```
+
+Ubuntu received all four replies. Windows initially experienced packet loss, but the repeated test succeeded. The domain-name test also succeeded, confirming DNS resolution.
+
+### Step 6 — Checked the recovery snapshots
 
 Both virtual machines already had baseline snapshots. I confirmed their existence and captured separate screenshots of their snapshot lists.
 
 Snapshots provide recovery points that allow a VM to return to a previously saved state.
 
-### Troubleshooting
+I did not create new snapshots during this ticket because suitable snapshots already existed.
 
-During the first Windows-to-internet connectivity test, `ping 8.8.8.8` returned 3 replies out of 4, resulting in 25% packet loss.
+### Step 7 — Recorded a connectivity problem and its resolution
 
-I repeated the test without changing the network configuration, and all 4 packets were received successfully. I also tested `ping google.com`, which successfully resolved the domain name and received all 4 replies.
+During the first Windows-to-internet connectivity test, `ping 8.8.8.8` returned three replies out of four, resulting in 25% packet loss.
 
-The initial packet loss was temporary and could not be reproduced during the retests. I recorded both the initial unsuccessful attempt and the successful results.
+I repeated the test without changing the network configuration, and all four packets were received successfully. I also tested `ping google.com`, which successfully resolved the domain name and received all four replies.
+
+The initial packet loss was temporary and could not be reproduced during the retests. I recorded both the initial unsuccessful attempt and the successful results rather than reporting only the final test.
 
 ## 4. Evidence
 
@@ -110,4 +181,4 @@ If I repeated this task, I would clarify the developer's intended workload befor
 
 I would also document each configuration screen during the initial VM creation process instead of relying on existing machines. This would provide clearer evidence of the original configuration choices and make the build process easier for another person to reproduce.
 
-Finally, I would perform and record network tests immediately after configuring both guests, so that any temporary connectivity problems could be identified and documented at the time.
+Finally, I would perform and record network tests immediately after configuring both guests, so that any temporary connectivity problems could be identified and documented.

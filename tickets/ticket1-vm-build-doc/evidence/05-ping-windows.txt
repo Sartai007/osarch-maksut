@@ -1,0 +1,30 @@
+WINDOWS 11 NETWORK TESTS
+
+1. Windows to Ubuntu
+Command: ping 192.168.208.129
+Sent: 4
+Received: 4
+Lost: 0 (0% loss)
+
+2. Windows to Internet (initial attempt)
+Command: ping 8.8.8.8
+Sent: 4
+Received: 3
+Lost: 1 (25% loss)
+
+3. Windows to Internet (retest)
+Command: ping 8.8.8.8
+Sent: 4
+Received: 4
+Lost: 0 (0% loss)
+
+4. Windows DNS and Internet test
+Command: ping google.com
+Resolved address: 142.251.142.238
+Sent: 4
+Received: 4
+Lost: 0 (0% loss)
+
+Conclusion:
+Windows successfully communicated with Ubuntu and accessed the internet.
+The initial packet loss was not reproduced during the retest.

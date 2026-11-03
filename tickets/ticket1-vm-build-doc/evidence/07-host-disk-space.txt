@@ -1,0 +1,10 @@
+Host storage evidence
+Drive: C:
+Total capacity: 1,024,086,503,424 bytes (953.75 GiB)
+Free space: 778,727,071,744 bytes (725.25 GiB)
+Used space: 245,359,431,680 bytes (228.51 GiB)
+
+Virtual disk allocations:
+Ubuntu: 40 GB
+Windows 11: 64 GB
+Combined virtual capacity: 104 GB

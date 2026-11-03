@@ -1,0 +1,28 @@
+# Network Connectivity Evidence
+
+## VM IP addresses
+
+Ubuntu Server: 192.168.208.129
+Windows 11: 192.168.208.130
+
+Both guests use the 192.168.208.0/24 subnet and NAT networking.
+
+## Connectivity results
+
+| Test | Result |
+|---|---|
+| Ubuntu to Windows | 4/4 received, 0% loss |
+| Windows to Ubuntu | 4/4 received, 0% loss |
+| Ubuntu to Internet | 4/4 received, 0% loss |
+| Windows to Internet (retest) | 4/4 received, 0% loss |
+| Windows to google.com | 4/4 received, 0% loss |
+
+## Issue encountered
+
+The initial Windows internet test to 8.8.8.8 experienced
+25% packet loss. Repeating the test resulted in 0% packet
+loss. No network configuration changes were necessary.
+
+Conclusion:
+Both virtual machines successfully accessed the internet
+and communicated with each other.

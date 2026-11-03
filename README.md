@@ -31,8 +31,21 @@
 - `tools/` — Tool of the Week write-ups
 - `errors/` — error records
 
+<<<<<<< HEAD
+=======
+## Ticket Exercises
+
+| **Ticket** | **Topic** | **Status** |
+|---|---|---|
+| [Ticket 1 — New Developer Test Machine](tickets/ticket1-vm-build-doc/) | Linux and Windows virtual machine build documentation | Done |
+
+>>>>>>> ab3ceab (Complete OSArch Ticket 1 VM build documentation)
 ## AI Use Declaration
 
 | **Tool** | **Purpose** |
 |---|---|
+<<<<<<< HEAD
 | ChatGPT | Assistance with interpreting Ticket 1 requirements, drafting and revising documentation, and organizing evidence. All VM configurations, commands, and test results were based on my own work and observations. |
+=======
+| ChatGPT | Assistance with interpreting Ticket 1 requirements, drafting and revising documentation, and organizing evidence. VM configurations and test results were based on my own work and observations. |
+>>>>>>> ab3ceab (Complete OSArch Ticket 1 VM build documentation)

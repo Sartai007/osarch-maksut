@@ -186,3 +186,24 @@ Hardware information was collected using PowerShell and saved in:
 
 4\. Windows PowerShell hardware inventory (`evidence/windows-specs.txt`).
 
+
+
+
+Comparison: 
+### 8. Comparison of Hardware Information Across Two Operating Systems
+
+| Hardware fact         | Windows (physical laptop)                                                                    | Linux (Ubuntu VMware VM)                                                                                                       |
+| --------------------- | -------------------------------------------------------------------------------------------- |
+| CPU model             | `Win32_Processor – Name`: Intel Core 5 210H                                                  | `lscpu – Model name`: Intel Core 5 210H                                                                                        |
+| Physical cores        | `Win32_Processor – NumberOfCores`: 8                                                         | `lscpu – Core(s) per socket`: 1 (2 virtual sockets; physical core count unavailable)                                           |
+| Logical CPUs          | `Win32_Processor – NumberOfLogicalProcessors`: 12                                            | `lscpu – CPU(s)`: 2                                                                                                            |
+| Total memory          | `Win32_ComputerSystem – TotalPhysicalMemory`: 16,824,262,656 bytes (approximately 15.67 GiB) | `free -h – Mem: total`: 7.2 GiB                                                                                                |
+| Memory type and speed | `Win32_PhysicalMemory – SMBIOSMemoryType`: DDR5; `ConfiguredClockSpeed`: 4800 MT/s           | `dmidecode -t memory – Type`: EDO DIMM; speed unavailable (virtual DMI data, unreliable)                                       |
+| Disk type             | `Get-PhysicalDisk – MediaType`: SSD                                                          | `lsblk – MODEL`: VMware Virtual S; 40 GB virtual disk                                                                          |
+| Disk interface        | `Get-PhysicalDisk – BusType`: NVMe                                                           | `lsblk – TRAN`: spi (reported by the virtual device)                                                                           |
+| Motherboard           | `Win32_BaseBoard – Manufacturer/Product`: LENOVO LNVNB161216                                 | `dmidecode -t baseboard – Manufacturer/Product Name`: Intel Corporation 440BX Desktop Reference Platform (virtual motherboard) |
+
+Explanation:
+
+The Windows and Linux outputs show some differences because they were collected from two different environments: Windows runs directly on the physical Lenovo laptop, while Ubuntu runs inside a VMware virtual machine. Although both systems report the same CPU model (Intel Core 5 210H), Ubuntu detects only two virtual CPUs and 7.2 GiB of allocated memory, whereas Windows detects the laptop's full 12 logical processors and approximately 15.67 GiB of physical memory.
+The differences in memory type, disk interface, and motherboard information are also caused by virtualization. Ubuntu reports virtual hardware provided by VMware rather than the laptop's actual components. Therefore, the Windows results represent the physical hardware more accurately, while the Linux results demonstrate how an operating system detects hardware inside a virtual machine.

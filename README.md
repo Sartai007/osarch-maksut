@@ -7,18 +7,18 @@
 
 | **Lab** | **Topic** | **Status** |
 |---|---|---|
-| [Lab 00 — Inventory](https://github.com/Sartai007/osarch-maksut/blob/main/labs/lab00) | Inventory your own machine | Done |
-| [Lab 01 — First VM](https://github.com/Sartai007/osarch-maksut/blob/main/labs/lab01-first-vm) | First virtual machine | Done |
-| [Lab 02 — Windows VM](https://github.com/Sartai007/osarch-maksut/blob/main/labs/lab02-windows-vm) | Windows VM, networking, and memory overcommit | Done |
-| [Lab 03 — Teardown without a screwdriver](https://github.com/Sartai007/osarch-maksut/blob/main/labs/lab03-teardown) | Laptop hardware teardown and upgrade analysis | Done |
-| Lab 04 | Storage — Partition, Mirror, Fail, Recover | Done |
+| [Lab 00 - Inventory](https://github.com/Sartai007/osarch-maksut/blob/main/labs/lab00) | Inventory your own machine | Done |
+| [Lab 01 - First VM](https://github.com/Sartai007/osarch-maksut/blob/main/labs/lab01-first-vm) | First virtual machine | Done |
+| [Lab 02 - Windows VM](https://github.com/Sartai007/osarch-maksut/blob/main/labs/lab02-windows-vm) | Windows VM, networking, and memory overcommit | Done |
+| [Lab 03 - Teardown without a screwdriver](https://github.com/Sartai007/osarch-maksut/blob/main/labs/lab03-teardown) | Laptop hardware teardown and upgrade analysis | Done |
+| [Lab 04 - Storage](https://github.com/Sartai007/osarch-maksut/tree/main/labs/lab04-storage) | Storage - Partition, Mirror, Fail, Recover | Done |
 | Lab 05–12 | To be updated | Not started |
 
 ## Ticket Exercises
 
 | **Ticket** | **Topic** | **Status** |
 |---|---|---|
-| [Ticket 1 — New Developer Test Machine](tickets/ticket1-vm-build-doc/) | Linux and Windows virtual machine build documentation | Done |
+| [Ticket 1 - New Developer Test Machine](tickets/ticket1-vm-build-doc/) | Linux and Windows virtual machine build documentation | Done |
 
 ## Tool of the Week
 

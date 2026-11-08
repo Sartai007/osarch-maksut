@@ -11,7 +11,8 @@
 | [Lab 01 — First VM](https://github.com/Sartai007/osarch-maksut/blob/main/labs/lab01-first-vm) | First virtual machine | Done |
 | [Lab 02 — Windows VM](https://github.com/Sartai007/osarch-maksut/blob/main/labs/lab02-windows-vm) | Windows VM, networking, and memory overcommit | Done |
 | [Lab 03 — Teardown without a screwdriver](https://github.com/Sartai007/osarch-maksut/blob/main/labs/lab03-teardown) | Laptop hardware teardown and upgrade analysis | Done |
-| Lab 04–12 | To be updated | Not started |
+| Lab 04 | Storage — Partition, Mirror, Fail, Recover | Done |
+| Lab 05–12 | To be updated | Not started |
 
 ## Ticket Exercises
 

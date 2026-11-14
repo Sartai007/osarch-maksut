@@ -182,6 +182,8 @@ The `evidence/` directory contains:
 
 Record the exact versions used during verification:
 
-- Microsoft Excel: [add version]
-- LibreOffice Calc: [add version]
-- Ubuntu: [add version]
+## 8. Software Versions
+
+- **Microsoft Excel LTSC:** Version 2610, Build 16.0.20527.20150 (64-bit)
+- **LibreOffice Calc:** Version 26.8.3.1 (X86_64)
+- **Operating System:** Ubuntu 26.04.1 LTS

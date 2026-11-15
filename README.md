@@ -1,6 +1,6 @@
-﻿# Operating System Architecture
+# Operating System Architecture
 
-**Student:** 
+**Student:** Nurmukhammad Maksut
 **Course:** Operating System Architecture
 
 ## Laboratory Work
@@ -20,7 +20,7 @@
 | **Ticket** | **Topic** | **Status** |
 |---|---|---|
 | [Ticket 1 — New Developer Test Machine](tickets/ticket1-vm-build-doc/) | Linux and Windows virtual machine build documentation | Done |
-| [Ticket 2 — New Office](tickets/ticket2-office-spec/) | Four workstation builds, compatibility, and budget analysis | In progress |
+| [Ticket 2 — New Office](tickets/ticket2-office-spec/) | Four workstation builds, compatibility, and budget analysis | Done |
 
 ## Tool of the Week
 

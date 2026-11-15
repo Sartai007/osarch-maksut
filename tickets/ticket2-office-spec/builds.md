@@ -5,7 +5,7 @@
 **Monitor vendors:** Technodom for the three Neo monitors; Shop.kz for the AOC designer monitor
 **Budget ceiling:** 3,000,000 KZT
 
-> Workloads are planning assumptions. Prices are dated online catalogue prices, not formal quotations. The actual Kazakhstan purchase models and prices below are authoritative for the budget. PCPartPicker comparison substitutions are listed separately in `pcpartpicker-links.md`.
+> Workloads are planning assumptions. Prices are dated online catalogue prices, not formal quotations. The actual Kazakhstan purchase models and prices below are authoritative for the budget. PCPartPicker comparison substitutions are listed separately in `evidence/pcpartpicker-links.md`.
 
 ## 1. Accountant — 480,730 ₸
 
@@ -29,7 +29,7 @@
 
 **Compatibility notes:** AM4 CPU and motherboard platform; check the exact A520M H ARGB revision and BIOS CPU-support list. The board uses DDR4 and has an M.2 slot; the Gen4 SSD will operate at the board's supported link speed. The 152 mm cooler fits the MA100's 160 mm cooler clearance. The 550 W PSU is ample for the integrated-graphics system. Connect the monitor to the motherboard video output.
 
-## 2. Sales — 588,720 ₸
+## 2. Sales — 601,720 ₸
 
 **Load:** CRM in a browser, approximately 30–40 tabs, Excel and frequent video calls, sometimes simultaneously.
 
@@ -51,9 +51,9 @@
 
 **Compatibility notes:** AM4 platform; verify the exact B550M board revision and BIOS CPU support for the 5600GT. The board supports DDR4; exact QVL status for the GeIL kit is not claimed. With the 5600GT, the SSD may operate at Gen3 speeds in the CPU-connected M.2 path. The 152 mm cooler fits the MA100's 160 mm limit. Integrated graphics drive the monitor from the motherboard output.
 
-## 3. Web Developer — 569,010 ₸
+## 3. Web Developer — 582,010 ₸
 
-**Load:** IDE, browser testing, local development servers, databases and moderate Docker/container use.
+**Load:** IDEs, browser testing, local development servers, databases and software builds (moderate development workload).
 
 **Bottleneck:** Parallel CPU work and memory when several tools/services run together. 32 GB RAM provides headroom for a moderate development stack.
 
@@ -101,14 +101,14 @@
 | Role | Total |
 |---|---:|
 | Accountant | 480,730 ₸ |
-| Sales | 588,720 ₸ |
-| Web Developer | 569,010 ₸ |
+| Sales | 601,720 ₸ |
+| Web Developer | 582,010 ₸ |
 | Designer | 1,250,510 ₸ |
-| **Total** | **2,888,970 ₸** |
+| **Total** | **2,914,970 ₸** |
 | Budget ceiling | 3,000,000 ₸ |
-| **Remaining** | **111,030 ₸** |
+| **Remaining** | **85,030 ₸** |
 
-The totals include the listed monitors and Windows licences. They exclude keyboard/mouse sets, assembly, delivery and paid specialist software. Do not describe the remaining 111,030 ₸ as sufficient for all extras until those prices are checked.
+The totals include the listed monitors and Windows licences. They exclude keyboard/mouse sets, assembly, delivery and paid specialist software. Do not describe the remaining 85,030 ₸ as sufficient for all extras until those prices are checked.
 
 ## Overall compatibility limitations
 

@@ -8,10 +8,10 @@ Some exact Kazakhstan purchase models were not available in the PCPartPicker cat
 
 | Role | PCPartPicker share link | Screenshot/result noted |
 |---|---|---|
-| Accountant | https://pcpartpicker.com/list/V96Xh9 | Green compatibility banner shown in the saved list. Some local case/monitor models were represented by catalogue alternatives. |
-| Sales | https://pcpartpicker.com/list/KF7hYX | Latest saved version includes Windows 11 Home Retail USB; green compatibility banner shown. |
-| Web Developer | https://pcpartpicker.com/list/NXjcyF | Green compatibility banner shown; estimated wattage 257 W. |
-| Designer | https://pcpartpicker.com/list/qbWXh9 | Green compatibility banner shown; estimated wattage 373 W. |
+| Accountant | https://pcpartpicker.com/list/V96Xh9 | Green compatibility banner shown. [Screenshot](pcpartpicker/accountant.png). Some local case/monitor models were represented by catalogue alternatives. |
+| Sales | https://pcpartpicker.com/list/KF7hYX | Latest saved version includes Windows 11 Home Retail USB; green compatibility banner shown. [Screenshot](pcpartpicker/sales.png). |
+| Web Developer | https://pcpartpicker.com/list/NXjcyF | Green compatibility banner shown; estimated wattage 257 W. [Screenshot](pcpartpicker/web-developer.png). |
+| Designer | https://pcpartpicker.com/list/qbWXh9 | Green compatibility banner shown; estimated wattage 373 W. [Screenshot](pcpartpicker/designer.png). |
 
 ## Known catalogue substitutions
 
@@ -44,6 +44,9 @@ Some exact Kazakhstan purchase models were not available in the PCPartPicker cat
 - Lian Li RB PSU: https://lian-li.com/product/rb-psu/
 - Thermaltake TR2 S 550W: https://thermaltake.com/products/tr2-s-550w-dc-to-dc-version
 
-## Evidence still to attach if available
+## Saved evidence
 
-The saved share links are recorded above. Add screenshots of the compatibility banner/details to the repository if the instructor expects image evidence. Formal vendor quotations were not supplied; the pre-built comparison uses dated public online listing prices and is explicitly labelled as such.
+- [x] Four PCPartPicker share links recorded.
+- [x] Four screenshots saved in pcpartpicker/ and linked in the table above.
+- [x] Manufacturer compatibility references recorded.
+- [ ] Formal vendor quotations were not obtained. The pre-built comparison uses dated public online catalogue prices, not formal quotations.

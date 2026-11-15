@@ -19,12 +19,12 @@
 | Role | Custom build total | Pre-built equivalent total | Pre-built difference |
 |---|---:|---:|---:|
 | Accountant | 480,730 ₸ | 839,980 ₸ | +359,250 ₸ |
-| Sales | 588,720 ₸ | 839,980 ₸ | +251,260 ₸ |
-| Web Developer | 569,010 ₸ | 854,370 ₸ | +285,360 ₸ |
+| Sales | 601,720 ₸ | 839,980 ₸ | +238,260 ₸ |
+| Web Developer | 582,010 ₸ | 854,370 ₸ | +272,360 ₸ |
 | Designer | 1,250,510 ₸ | 1,085,170 ₸ | −165,340 ₸ |
-| **Total** | **2,888,970 ₸** | **3,619,500 ₸** | **+730,530 ₸** |
+| **Total** | **2,914,970 ₸** | **3,619,500 ₸** | **+704,530 ₸** |
 
-The pre-built package is approximately **730,530 ₸ (25.3%) more expensive** than the proposed custom package, using the listed prices and adding monitors/licences where absent. This is not a perfectly identical comparison: the HP office systems include keyboard and mouse and Windows; the custom budget does not include keyboard/mouse. The Designer pre-built is cheaper but has an 8 GB RTX 5060 Ti rather than the custom build's 16 GB version.
+The pre-built package is approximately **704,530 ₸ (24.2%) more expensive** than the proposed custom package, using the listed prices and adding monitors/licences where absent. This is not a perfectly identical comparison: the HP office systems include keyboard and mouse and Windows; the custom budget does not include keyboard/mouse. The Designer pre-built is cheaper but has an 8 GB RTX 5060 Ti rather than the custom build's 16 GB version.
 
 ## What is gained by buying pre-built
 
@@ -40,7 +40,7 @@ The pre-built package is approximately **730,530 ₸ (25.3%) more expensive** th
 - The Developer pre-built includes an RTX 3050 that is not needed for the assumed development workload, while its listing identifies an H610 board and DDR5; verify exact motherboard model and upgrade options.
 - The Designer pre-built has only 8 GB GPU memory, half the 16 GB in the custom proposal. This matters for larger 3D scenes and GPU-accelerated workloads.
 - HP OmniDesk is limited to 32 GB RAM according to the listing, while the custom workstation platforms have more upgrade flexibility.
-- The total pre-built price exceeds the 3,000,000 KZT ceiling by 619,500 KZT, whereas the custom plan remains 111,030 KZT under budget before peripherals, assembly and delivery.
+- The total pre-built price exceeds the 3,000,000 KZT ceiling by 619,500 KZT, whereas the custom plan remains 85,030 KZT under budget before peripherals, assembly and delivery.
 
 ## Important listing caveats
 

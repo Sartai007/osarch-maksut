@@ -1,6 +1,6 @@
-# Operating System Architecture
+﻿# Operating System Architecture
 
-**Student:** Nurmukhammad Maksut  
+**Student:** 
 **Course:** Operating System Architecture
 
 ## Laboratory Work
@@ -12,7 +12,7 @@
 | [Lab 02 — Windows VM](https://github.com/Sartai007/osarch-maksut/blob/main/labs/lab02-windows-vm) | Windows VM, networking, and memory overcommit | Done |
 | [Lab 03 — Teardown without a screwdriver](https://github.com/Sartai007/osarch-maksut/blob/main/labs/lab03-teardown) | Laptop hardware teardown and upgrade analysis | Done |
 | [Lab 04 — Storage](https://github.com/Sartai007/osarch-maksut/tree/main/labs/lab04-storage) | Storage — Partition, Mirror, Fail, Recover | Done |
-| [Lab 05 — Encoding Forensics](labs/lab05-encoding/) | File encoding diagnosis and conversion | Done |
+| [Lab 05 — Encoding Forensics](https://github.com/Sartai007/osarch-maksut/tree/main/labs/lab05-encoding) | File encoding diagnosis and conversion | Done |
 | Lab 06–12 | To be updated | Not started |
 
 ## Ticket Exercises
@@ -20,6 +20,7 @@
 | **Ticket** | **Topic** | **Status** |
 |---|---|---|
 | [Ticket 1 — New Developer Test Machine](tickets/ticket1-vm-build-doc/) | Linux and Windows virtual machine build documentation | Done |
+| [Ticket 2 — New Office](tickets/ticket2-office-spec/) | Four workstation builds, compatibility, and budget analysis | In progress |
 
 ## Tool of the Week
 

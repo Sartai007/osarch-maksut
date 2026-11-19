@@ -16,9 +16,9 @@
 
 |01|	01-hostnamectl.txt (hostnamectl)|	Identify the server and OS|	Ubuntu 24.04.1 LTS, hostname office-srv, running in VirtualBox|	Confirms the affected machine and operating system|
 
-| 02 | `02-uptime.txt` (`uptime`) | Check uptime and system load | Uptime almost 7 days; load average 0.00, 0.01, 0.00 | No evidence of system overload |
+| 02 | 02-uptime.txt (uptime) | Check uptime and system load | Uptime almost 7 days; load average 0.00, 0.01, 0.00 | No evidence of system overload |
 
-| 03 | `03-df-h.txt` (`df -h`) | Check available disk space | Root filesystem has 5.8 GB available, 48% used | Disk space is unlikely to be the cause |
+| 03 | 03-df-h.txt (df -h) | Check available disk space | Root filesystem has 5.8 GB available, 48% used | Disk space is unlikely to be the cause |
 
 
 

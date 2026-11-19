@@ -1,0 +1,305 @@
+ systeminfo
+
+Имя узла:                                WIN-QHI09H7A4I7
+Имя ОС:                                  Майкрософт Windows 11 Pro
+Версия ОС:                               10.0.26200 Н/Д построение 26200
+Изготовитель ОС:                         Microsoft Corporation
+Конфигурация ОС:                         Изолированная рабочая станция
+Тип сборки ОС:                           Multiprocessor Free
+Зарегистрированный владелец:             user
+Зарегистрированная организация:
+Код продукта:                            00331-10000-00001-AA256
+Дата исходной установки:                 29.05.2025, 15:13:35
+Время загрузки системы:                  03.11.2026, 10:55:14
+Изготовитель системы:                    LENOVO
+Модель системы:                          83K4
+Тип системы:                             x64-based PC
+Процессоры:                              Число процессоров - 1.
+                                         [01]: Intel64 Family 6 Model 186 Stepping 2 GenuineIntel ~2200 МГц
+Версия BIOS:                             LENOVO QDCN24WW, 05.03.2025
+Каталог Windows:                         C:\Windows
+Системный каталог:                       C:\Windows\system32
+Устройство загрузки:                     \Device\HarddiskVolume1
+Язык системы:                            ru;Русский
+Язык ввода:                              en-us;Английский (США)
+Часовой пояс:                            (UTC+05:00) Екатеринбург
+Полный объем физической памяти:          16 045 МБ
+Доступная физическая память:             3 737 МБ
+Виртуальная память: максимальный размер: 29 869 МБ
+Виртуальная память: доступна:            10 637 МБ
+Виртуальная память: используется:        19 232 МБ
+Расположение файла подкачки:             C:\pagefile.sys
+Домен:                                   WORKGROUP
+Сервер для входа:                        \\WIN-QHI09H7A4I7
+Исправления:                             Число установленных исправлений - 5.
+                                         [01]: KB5127690
+                                         [02]: KB5054156
+                                         [03]: KB5132061
+                                         [04]: KB5127647
+                                         [05]: KB5132688
+Сетевые адаптеры:                        Число сетевых адаптеров - 3.
+                                         [01]: VMware Virtual Ethernet Adapter for VMnet1
+                                               Имя подключения: VMware Network Adapter VMnet1
+                                               DHCP включен:    Да
+                                               DHCP-сервер:     192.168.77.254
+                                               IP-адрес
+                                               [01]: 192.168.77.1
+                                               [02]: fe80::c1c4:529b:ae12:e7f7
+                                         [02]: Realtek RTL8852BE WiFi 6 802.11ax PCIe Adapter
+                                               Имя подключения: Беспроводная сеть
+                                               DHCP включен:    Да
+                                               DHCP-сервер:     172.20.10.1
+                                               IP-адрес
+                                               [01]: 172.20.10.2
+                                               [02]: fe80::626b:5585:22c0:697d
+                                               [03]: 2a03:32c0:4:3f04:2980:ae6e:e3a1:73e7
+                                               [04]: 2a03:32c0:4:3f04:81f2:7057:efea:deac
+                                         [03]: VMware Virtual Ethernet Adapter for VMnet8
+                                               Имя подключения: VMware Network Adapter VMnet8
+                                               DHCP включен:    Да
+                                               DHCP-сервер:     192.168.208.254
+                                               IP-адрес
+                                               [01]: 192.168.208.1
+                                               [02]: fe80::3fd:1b11:fbe7:1cb7
+Безопасность на основе виртуализации:    Состояние: Выполняется
+                                         Обязательные свойства безопасности:
+                                               Базовая поддержка виртуализации
+                                         Доступные свойства безопасности:
+                                               Базовая поддержка виртуализации
+                                               Защита DMA
+                                               Безопасная перезапись памяти
+                                               Код UEFI только для чтения
+                                               Снижение рисков безопасности SMM 1.0
+                                               Управление выполнением на основе режимов
+                                               Виртуализация APIC
+                                         Services Configured:
+                                               Условие обязательной целостности кода низкоуровневой оболочки
+                                         Services Running:
+                                               Условие обязательной целостности кода низкоуровневой оболочки
+                                         App Control for Business policy: Применено
+                                         App Control for Business user mode policy: Выкл.
+                                         Функции безопасности включены:
+Требования Hyper-V:                      Обнаружена низкоуровневая оболочка. Функции, необходимые для Hyper-V, отображены не будут.
+PS C:\Users\user> Get-PhysicalDisk
+
+Number FriendlyName                   SerialNumber         MediaType CanPool OperationalStatus HealthSt
+                                                                                               atus
+------ ------------                   ------------         --------- ------- ----------------- --------
+0      Micron MTFDKCD1T0QGN-1BN1AABLA 00A0_7501_4DCA_1507. SSD       False   OK                Healthy
+
+
+PS C:\Users\user> Get-PhysicalDisk | Format-List *
+
+
+ClassName                        : MSFT_PhysicalDisk
+Usage                            : Auto-Select
+OperationalStatus                : OK
+UniqueIdFormat                   : SCSI Name String
+HealthStatus                     : Healthy
+BusType                          : NVMe
+CannotPoolReason                 : Insufficient Capacity
+SupportedUsages                  : {Auto-Select, Manual-Select, Hot Spare, Retired...}
+MediaType                        : SSD
+SpindleSpeed                     : 0
+ObjectId                         : {1}\\WIN-QHI09H7A4I7\root/Microsoft/Windows/Storage/Providers_v2\SPA
+                                   CES_PhysicalDisk.ObjectId="{2a349c7b-3c75-11f0-80b9-806e6f6e6963}:PD
+                                   :{383240de-5bd5-2d62-4ef3-9fae80c7a385}"
+PassThroughClass                 :
+PassThroughIds                   :
+PassThroughNamespace             :
+PassThroughServer                :
+UniqueId                         : eui.00A075014DCA1507
+Description                      :
+FriendlyName                     : Micron MTFDKCD1T0QGN-1BN1AABLA
+Manufacturer                     :
+Model                            : Micron MTFDKCD1T0QGN-1BN1AABLA
+OperationalDetails               :
+PhysicalLocation                 : PCI Slot 2 : Bus 2 : Device 0 : Function 0 : Adapter 0
+SerialNumber                     : 00A0_7501_4DCA_1507.
+AdapterSerialNumber              : 25044DCA1507        _0000
+AllocatedSize                    : 1024209543168
+CanPool                          : False
+DeviceId                         : 0
+EnclosureNumber                  :
+FirmwareVersion                  : 1002V8LN
+FruId                            : 25044DCA1507
+IsIndicationEnabled              : False
+IsPartial                        : True
+LogicalSectorSize                : 512
+OtherCannotPoolReasonDescription :
+PartNumber                       :
+PhysicalSectorSize               : 4096
+Size                             : 1024209543168
+SlotNumber                       :
+SoftwareVersion                  :
+StoragePoolUniqueId              :
+VirtualDiskFootprint             : 0
+PSComputerName                   :
+CimClass                         : root/microsoft/windows/storage:MSFT_PhysicalDisk
+CimInstanceProperties            : {ObjectId, PassThroughClass, PassThroughIds, PassThroughNamespace...
+                                   }
+CimSystemProperties              : Microsoft.Management.Infrastructure.CimSystemProperties
+
+
+
+PS C:\Users\user> Get-Volume
+
+DriveLetter FriendlyName FileSystemType DriveType HealthStatus OperationalStatus SizeRemaining     Size
+----------- ------------ -------------- --------- ------------ ----------------- -------------     ----
+                         FAT32          Fixed     Healthy      OK                     53.59 MB    96 MB
+C           Windows 11   NTFS           Fixed     Healthy      OK                     713.8 GB ...75 GB
+
+
+PS C:\Users\user> Get-CimInstance Win32_Processor | Format-List *
+
+
+Availability                            : 3
+CpuStatus                               : 1
+CurrentVoltage                          : 11
+DeviceID                                : CPU0
+ErrorCleared                            :
+ErrorDescription                        :
+LastErrorCode                           :
+LoadPercentage                          : 3
+Status                                  : OK
+StatusInfo                              : 3
+AddressWidth                            : 64
+DataWidth                               : 64
+ExtClock                                : 100
+L2CacheSize                             : 7168
+L2CacheSpeed                            :
+MaxClockSpeed                           : 2200
+PowerManagementSupported                : False
+ProcessorType                           : 3
+Revision                                :
+SocketDesignation                       : U3E1
+Version                                 :
+VoltageCaps                             :
+Caption                                 : Intel64 Family 6 Model 186 Stepping 2
+Description                             : Intel64 Family 6 Model 186 Stepping 2
+InstallDate                             :
+Name                                    : Intel(R) Core(TM) 5 210H
+ConfigManagerErrorCode                  :
+ConfigManagerUserConfig                 :
+CreationClassName                       : Win32_Processor
+PNPDeviceID                             :
+PowerManagementCapabilities             :
+SystemCreationClassName                 : Win32_ComputerSystem
+SystemName                              : WIN-QHI09H7A4I7
+CurrentClockSpeed                       : 2200
+Family                                  : 1
+OtherFamilyDescription                  :
+Role                                    : CPU
+Stepping                                :
+UniqueId                                :
+UpgradeMethod                           : 65
+Architecture                            : 9
+AssetTag                                : To Be Filled By O.E.M.
+Characteristics                         : 252
+L3CacheSize                             : 12288
+L3CacheSpeed                            : 0
+Level                                   : 6
+Manufacturer                            : GenuineIntel
+NumberOfCores                           : 8
+NumberOfEnabledCore                     : 8
+NumberOfLogicalProcessors               : 12
+PartNumber                              : To Be Filled By O.E.M.
+ProcessorId                             : BFEBFBFF000B06A2
+SecondLevelAddressTranslationExtensions : False
+SerialNumber                            : To Be Filled By O.E.M.
+ThreadCount                             : 12
+VirtualizationFirmwareEnabled           : False
+VMMonitorModeExtensions                 : False
+PSComputerName                          :
+CimClass                                : root/cimv2:Win32_Processor
+CimInstanceProperties                   : {Caption, Description, InstallDate, Name...}
+CimSystemProperties                     : Microsoft.Management.Infrastructure.CimSystemPrope
+                                          rties
+
+
+
+PS C:\Users\user> systeminfo
+
+Имя узла:                                WIN-QHI09H7A4I7
+Имя ОС:                                  Майкрософт Windows 11 Pro
+Версия ОС:                               10.0.26200 Н/Д построение 26200
+Изготовитель ОС:                         Microsoft Corporation
+Конфигурация ОС:                         Изолированная рабочая станция
+Тип сборки ОС:                           Multiprocessor Free
+Зарегистрированный владелец:             user
+Зарегистрированная организация:
+Код продукта:                            00331-10000-00001-AA256
+Дата исходной установки:                 29.05.2025, 15:13:35
+Время загрузки системы:                  03.11.2026, 10:55:14
+Изготовитель системы:                    LENOVO
+Модель системы:                          83K4
+Тип системы:                             x64-based PC
+Процессоры:                              Число процессоров - 1.
+                                         [01]: Intel64 Family 6 Model 186 Stepping 2 GenuineIntel ~2200 МГц
+Версия BIOS:                             LENOVO QDCN24WW, 05.03.2025
+Каталог Windows:                         C:\Windows
+Системный каталог:                       C:\Windows\system32
+Устройство загрузки:                     \Device\HarddiskVolume1
+Язык системы:                            ru;Русский
+Язык ввода:                              en-us;Английский (США)
+Часовой пояс:                            (UTC+05:00) Екатеринбург
+Полный объем физической памяти:          16 045 МБ
+Доступная физическая память:             4 542 МБ
+Виртуальная память: максимальный размер: 29 869 МБ
+Виртуальная память: доступна:            10 495 МБ
+Виртуальная память: используется:        19 374 МБ
+Расположение файла подкачки:             C:\pagefile.sys
+Домен:                                   WORKGROUP
+Сервер для входа:                        \\WIN-QHI09H7A4I7
+Исправления:                             Число установленных исправлений - 5.
+                                         [01]: KB5127690
+                                         [02]: KB5054156
+                                         [03]: KB5132061
+                                         [04]: KB5127647
+                                         [05]: KB5132688
+Сетевые адаптеры:                        Число сетевых адаптеров - 3.
+                                         [01]: VMware Virtual Ethernet Adapter for VMnet1
+                                               Имя подключения: VMware Network Adapter VMnet1
+                                               DHCP включен:    Да
+                                               DHCP-сервер:     192.168.77.254
+                                               IP-адрес
+                                               [01]: 192.168.77.1
+                                               [02]: fe80::c1c4:529b:ae12:e7f7
+                                         [02]: Realtek RTL8852BE WiFi 6 802.11ax PCIe Adapter
+                                               Имя подключения: Беспроводная сеть
+                                               DHCP включен:    Да
+                                               DHCP-сервер:     172.20.10.1
+                                               IP-адрес
+                                               [01]: 172.20.10.2
+                                               [02]: fe80::626b:5585:22c0:697d
+                                               [03]: 2a03:32c0:4:3f04:2980:ae6e:e3a1:73e7
+                                               [04]: 2a03:32c0:4:3f04:81f2:7057:efea:deac
+                                         [03]: VMware Virtual Ethernet Adapter for VMnet8
+                                               Имя подключения: VMware Network Adapter VMnet8
+                                               DHCP включен:    Да
+                                               DHCP-сервер:     192.168.208.254
+                                               IP-адрес
+                                               [01]: 192.168.208.1
+                                               [02]: fe80::3fd:1b11:fbe7:1cb7
+Безопасность на основе виртуализации:    Состояние: Выполняется
+                                         Обязательные свойства безопасности:
+                                               Базовая поддержка виртуализации
+                                         Доступные свойства безопасности:
+                                               Базовая поддержка виртуализации
+                                               Защита DMA
+                                               Безопасная перезапись памяти
+                                               Код UEFI только для чтения
+                                               Снижение рисков безопасности SMM 1.0
+                                               Управление выполнением на основе режимов
+                                               Виртуализация APIC
+                                         Services Configured:
+                                               Условие обязательной целостности кода низкоуровневой оболочки
+                                         Services Running:
+                                               Условие обязательной целостности кода низкоуровневой оболочки
+                                         App Control for Business policy: Применено
+                                         App Control for Business user mode policy: Выкл.
+                                         Функции безопасности включены:
+Требования Hyper-V:                      Обнаружена низкоуровневая оболочка. Функции, необходимые для Hyper-V, отображены не будут.
+PS C:\Users\user> $env:firmware_type
+UEFI
+PS C:\Users\user>

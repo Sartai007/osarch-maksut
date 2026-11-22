@@ -1,0 +1,25 @@
+﻿LAB 06 — WINDOWS MEMORY EVENT LOG INVESTIGATION
+
+Command:
+Get-WinEvent -FilterHashtable @{LogName='System'; Id=2004}
+
+Result:
+One Event ID 2004 was returned:
+Provider: Microsoft-Windows-Setup
+Level: Information
+Message: Successfully logged OS information
+Date: 28/10/2026 05:15:03
+
+This was not a memory exhaustion event.
+
+Additional check:
+Provider: Microsoft-Windows-Resource-Exhaustion-Detector
+Log: System
+
+Result:
+No matching events were found.
+
+Conclusion:
+No Windows Resource-Exhaustion-Detector events were recorded
+in the available System log. Therefore, there was no matching
+Windows memory-exhaustion event to compare with the Linux OOM kill.

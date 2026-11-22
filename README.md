@@ -1,6 +1,6 @@
 # Operating System Architecture
 
-**Student:** Nurmukhammad Maksut
+**Student:** N Maksut
 **Course:** Operating System Architecture
 
 ## Laboratory Work
@@ -13,7 +13,8 @@
 | [Lab 03 — Teardown without a screwdriver](https://github.com/Sartai007/osarch-maksut/blob/main/labs/lab03-teardown) | Laptop hardware teardown and upgrade analysis | Done |
 | [Lab 04 — Storage](https://github.com/Sartai007/osarch-maksut/tree/main/labs/lab04-storage) | Storage — Partition, Mirror, Fail, Recover | Done |
 | [Lab 05 — Encoding Forensics](https://github.com/Sartai007/osarch-maksut/tree/main/labs/lab05-encoding) | File encoding diagnosis and conversion | Done |
-| Lab 06–12 | To be updated | Not started |
+| [Lab 06 — Processes and Memory](labs/lab06-processes) | Process monitoring and memory management | Done |
+| Lab 07–12 | To be updated | Not started |
 
 ## Ticket Exercises
 

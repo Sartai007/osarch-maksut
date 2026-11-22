@@ -1,0 +1,45 @@
+﻿LAB 06 — MEMORY PRESSURE EXPERIMENT
+
+Environment:
+Ubuntu 26.04.1 LTS
+VM RAM: approximately 3.3 GiB
+Swap: 3.8 GiB
+
+1. BEFORE ALLOCATION
+Command: free -h
+
+RAM used: 567 MiB
+RAM available: 2.7 GiB
+Swap used: 0 B
+
+2. DURING ALLOCATION
+Official Python allocation script from Lab 6 was used.
+Each iteration allocated approximately 100 MB.
+
+At approximately 2000 MB allocated:
+RAM free: approximately 640 MiB
+Swap used: 0 B
+
+Later, vmstat 1 showed nonzero swap usage and swap input/output activity (si and so).
+
+3. KERNEL RESPONSE
+The allocation reached approximately 7000 MB.
+The Linux kernel terminated the Python process because of insufficient memory.
+
+Process: python3
+PID: 3489
+
+4. AFTER ALLOCATION
+Command: free -h
+
+RAM used: 526 MiB
+RAM available: 2.8 GiB
+Swap used: 50 MiB
+Swap total: 3.8 GiB
+
+5. OBSERVATION
+As memory pressure increased, available physical RAM decreased.
+Linux began using swap, and eventually the Out-Of-Memory (OOM) mechanism
+terminated the memory-consuming Python process.
+After termination, the system recovered most of its available RAM,
+although some swap remained in use.
